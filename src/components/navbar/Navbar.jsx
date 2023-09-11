@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import styles from "./navbar.module.css";
 import Image from "next/image";
@@ -14,7 +15,7 @@ const Navbar = () => {
         <Image src="/tiktok.png" alt="tiktok" width={24} height={24} />
         <Image src="/youtube.png" alt="youtube" width={24} height={24} />
       </div>
-      <div className={styles.logo}>lamablog</div>
+      <div className={styles.logo}><p>Kanishka's Blog</p></div>
       <div className={styles.links}>
         <ThemeToggle />
         <Link href="/" className={styles.link}>Homepage</Link>
